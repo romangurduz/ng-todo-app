@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { TodosComponent } from './components/todos/todos.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AboutComponent],
+  declarations: [AppComponent, HeaderComponent, AboutComponent, TodosComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
