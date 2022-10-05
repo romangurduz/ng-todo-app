@@ -1,0 +1,10 @@
+<div>
+  <label for="{{ todo.id }}">{{ todo.title }} - {{ todo.description }}</label>
+  <input
+    type="checkbox"
+    id="{{ todo.id }}"
+    (change)="onToggle(todo)"
+    [checked]="todo.completed"
+  />
+  <button (click)="onDelete(todo)" class="del">X</button>
+</div>
